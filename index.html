@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>line labs — thoughtful websites, built for your next chapter</title>
+<meta name="description" content="line labs is a small studio designing and building considered websites for founders, artists, and teams starting their next chapter.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">line labs</a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="work.html">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-small nav-cta">Let's talk</a>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+    <a href="work.html">Work</a>
+    <a href="#studio">Studio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="hero-art" aria-hidden="true">
+      <img src="assets/swirl.png" alt="" class="swirl-img">
+    </div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <h1 class="headline">Good websites.<br>Great first<br>impressions.</h1>
+        <p class="subhead">Thoughtful design. Built for your next chapter.</p>
+        <a href="#contact" class="btn btn-primary">
+          Let's build yours
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9H14M14 9L9.5 4.5M14 9L9.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Selected work</span>
+        <h2 class="section-title">A handful of recent chapters.</h2>
+      </div>
+
+      <div class="work-grid">
+        <div class="work-row">
+          <article class="work-card">
+            <div class="work-thumb thumb-1">
+              <span class="work-tag">Brand &amp; Web</span>
+            </div>
+            <div class="work-meta">
+              <h3>Nova Finance</h3>
+              <p>A calm, confident site for a fintech built on trust.</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb thumb-2">
+              <span class="work-tag">Portfolio</span>
+            </div>
+            <div class="work-meta">
+              <h3>Aster Studio</h3>
+              <p>An architecture portfolio that gives the work room to breathe.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="work-row">
+          <article class="work-card">
+            <div class="work-thumb thumb-3">
+              <span class="work-tag">E-commerce</span>
+            </div>
+            <div class="work-meta">
+              <h3>Fernweh</h3>
+              <p>A travel goods shop designed to feel like the trip already started.</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumb thumb-4">
+              <span class="work-tag">Product</span>
+            </div>
+            <div class="work-meta">
+              <h3>Beacon Health</h3>
+              <p>Marketing site and docs for a clinical scheduling platform.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <a href="work.html" class="work-view-all">
+        View all 20 projects
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 9H14M14 9L9.5 4.5M14 9L9.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="studio" id="studio">
+    <div class="wrap studio-inner">
+      <div class="section-head">
+        <span class="eyebrow">Studio</span>
+        <h2 class="section-title">Small by design.</h2>
+      </div>
+      <div class="studio-grid">
+        <p class="studio-lede">line labs is a small studio designing and building considered websites for founders, artists, and teams starting their next chapter. We keep a short client list on purpose — fewer projects, more attention, better work.</p>
+        <dl class="studio-stats">
+          <div class="stat">
+            <dt>Founded</dt>
+            <dd>2021</dd>
+          </div>
+          <div class="stat">
+            <dt>Based in</dt>
+            <dd>Remote, worldwide</dd>
+          </div>
+          <div class="stat">
+            <dt>Projects shipped</dt>
+            <dd>40+</dd>
+          </div>
+          <div class="stat">
+            <dt>Active clients</dt>
+            <dd>3 at a time</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner">
+      <span class="eyebrow">Contact</span>
+      <h2 class="contact-title">Let's build yours.</h2>
+      <p class="contact-sub">Tell us a bit about the project and we'll get back to you within a couple of days.</p>
+
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Tell us about your project</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Send message
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 9H14M14 9L9.5 4.5M14 9L9.5 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <p class="form-note" id="form-note" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="assets/knot.png" alt="" class="footer-knot" aria-hidden="true">
+        <a href="#top" class="logo">line labs</a>
+      </div>
+      <div class="footer-nav-col">
+        <span class="eyebrow">Explore</span>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="work.html">Work</a>
+          <a href="#studio">Studio</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="footer-copy">© 2026 line labs. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
